@@ -4,6 +4,21 @@ framework_version: 1.0.2
 
 # Cover Letter Templates and Tailoring Guide
 
+<!-- ACTIVE-TEMPLATE:START -->
+> **ACTIVE TEMPLATE: `stephan-letter`** (registered via /add-template, 2026-09-02)
+>
+> The stock `cover.cls` guidance below is **inactive**. Draft from the registered template instead.
+>
+> - **Source:** `templates/cover_letters/stephan-letter/template.tex` (German) or `template-en.tex` (English)
+> - **Compile:** `pdflatex -interaction=nonstopmode <file>.tex`, run **twice**
+> - **Engine:** pdflatex via TinyTeX (add `$HOME/Library/TinyTeX/bin/universal-darwin` to PATH)
+> - **Pages:** exactly 1, signature block included
+> - **Style:** no em-dashes, no `ß` (`Freundliche Grüsse`), no bold in the body
+> - **Opening:** one concrete story, never a thesis statement
+> - **Closing:** state language, availability, and the Pensum applied for
+> - Full details: `templates/cover_letters/stephan-letter/TEMPLATE.md`
+<!-- ACTIVE-TEMPLATE:END -->
+
 ## Template: Custom cover.cls (XeLaTeX)
 
 Cover letters use a custom LaTeX document class (`cover.cls`) with Lato/Raleway fonts.

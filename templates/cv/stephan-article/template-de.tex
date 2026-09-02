@@ -1,0 +1,99 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}\usepackage{microtype}}{}
+\IfFileExists{ngerman.ldf}{\usepackage[ngerman]{babel}}{}
+\usepackage[margin=1.26cm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{cvblue}{HTML}{2E5A8C}
+\hypersetup{colorlinks=true, urlcolor=cvblue, linkcolor=cvblue}
+
+\setlist[itemize]{leftmargin=1.25em, itemsep=1.8pt, topsep=1.8pt, parsep=0pt}
+\setlength{\parindent}{0pt}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.38em}\par
+  {\color{cvblue}\large #1}\par
+  \vspace{-0.28em}\textcolor{cvblue}{\rule{\linewidth}{0.6pt}}\par
+  \vspace{0.26em}}
+
+\newcommand{\cventry}[3]{\vspace{0.4em}#1, \textit{#2}\hfill #3\par\vspace{1pt}}
+
+\begin{document}
+\pagestyle{empty}
+
+%% ============================================================
+%% Lebenslauf [First] [Last]
+%% WSL, Landschaftsdynamik / Landnutzungssysteme, DISCLOSE
+%% Wissenschaftliche Assistenz Sozialwissenschaftliche Forschung
+%% Ohne Gedankenstriche; nur normale Bindestriche in Komposita.
+%% ============================================================
+
+{\Huge [First] [Last]}\\[0.15em]
+{\color{cvblue}\large Qualitative Sozialforschung, Stadt- und Raumentwicklung, Landnutzung}\\[0.5em]
+[Phone] \textbullet\ \href{mailto:[your.email@example.com]}{[your.email@example.com]} \textbullet\ \href{[LinkedInURL]}{[LinkedInHandle]} \textbullet\ Zürich
+
+\vspace{3pt}
+
+\cvsection{Profil}
+
+Sozialwissenschaftler mit ETH-Master und vier Jahren Forschungserfahrung zu Raumentwicklung, Land- und Bodennutzung sowie Stadtpolitik. Mein Schwerpunkt ist die selbstständige Auswertung qualitativer Daten aus Interviews, Dokumenten und Feldbeobachtung, codiert in MAXQDA. Quantitativ arbeite ich mit Umfrageexperimenten, Kausalinferenz und Text-as-Data.
+
+\cvsection{Forschungserfahrung}
+
+\cventry{Wissenschaftlicher Mitarbeiter}{LMU München (befristet, remote aus Zürich)}{seit Feb. 2026}
+\begin{itemize}
+\item Qualitative und quantitative Sozialforschung zu staatlichen Massnahmen: Konzeption, Programmierung und statistische Auswertung von Umfrageexperimenten.
+\item Codierung und Auswertung von Interviewdaten in MAXQDA, NLP-gestützte Themenextraktion; Mitarbeit an wissenschaftlichen Publikationen.
+\end{itemize}
+
+\cventry{Wissenschaftlicher Mitarbeiter \& Data Scientist}{Sotomo, Zürich}{Mai 2025 bis Dez. 2025}
+\begin{itemize}
+\item Fachliche Leitung der Studie zu den digitalen Dienstleistungen der Stadt Zürich: Zugang, Nutzung und Zugangshürden über die Quartiere hinweg; Koordination mit Verwaltung, Politik und Forschung.
+\item Qualitative Auswertung offener Nennungen und Interviewmaterial in MAXQDA; Verfassen von Berichten und Policy Briefs für Auftraggebende aus Verwaltung und Wirtschaft.
+\end{itemize}
+
+\cventry{Wissenschaftlicher Mitarbeiter}{Interface Politikstudien, Luzern (Raum und Verkehr)}{Aug. 2024 bis Apr. 2025}
+\begin{itemize}
+\item Qualitative Erhebungen: halbstrukturierte Interviews mit Stakeholdern, Fokusgruppen mit institutionellen Akteuren und teilnehmende Beobachtung im Feld bei der Erhebung am Flughafen Zürich.
+\item Dokumenten- und Inhaltsanalysen von Politik- und Verwaltungsunterlagen, codiert in MAXQDA; systematische Literaturrecherchen und Aufbereitung des Fallstudienkontexts.
+\item Evaluationen für Bund, Kantone und Gemeinden, darunter für die Parlamentarische Verwaltungskontrolle und das Bundesamt für Energie.
+\end{itemize}
+
+\cventry{Forschungsassistent}{ETH Zürich, SPUR (Raumentwicklung und Stadtpolitik)}{Okt. 2021 bis Juni 2024}
+\begin{itemize}
+\item Systematische Inhaltsanalyse von rund 300 regionalen Planungs- und Politikdokumenten; qualitative Codierung und Entwicklung einer Typologie städtischer Nachhaltigkeitspolitik in MAXQDA.
+\item Vergleichende Fallstudien zu Stadtentwicklung und Governance in acht europäischen Städten im interdisziplinären Forschungsteam, inklusive Mitorganisation von Projektworkshops; Web Scraping und NLP in R und Python.
+\item Ko-Autorenschaft an einer Publikation in \textit{Nature Sustainability} zur Bürgerbeteiligung in der nachhaltigen Stadtentwicklung (Kaufmann et al., 2024).
+\end{itemize}
+
+\cventry{Forschungspraktikant}{Environmental Resilience Institute, Indiana University}{Apr. bis Okt. 2020}
+\begin{itemize}
+\item Halbstrukturierte Experteninterviews mit Leitenden von Energie-, Klima- und Planungsstellen in 92 Bezirken; Aufbau einer vergleichenden Datenbank regionaler Klimagovernance.
+\end{itemize}
+
+\cvsection{Ausbildung}
+
+\cventry{MA Comparative and International Studies}{ETH Zürich}{2021 bis 2024}
+\begin{itemize}
+\item Schwerpunkte: empirische Sozialforschung, Stadt- und Raumforschung, Governance und Regulierung. Masterarbeit «Regulatory Repercussions»: Mixed-Methods-Studie mit qualitativer Codierung von 146 Regulierungsdokumenten aus 133 US-Städten.
+\end{itemize}
+
+\cventry{BA Political Science \& Philosophy}{Indiana University Bloomington, USA}{2018 bis 2021}
+
+\cvsection{Methoden, Software, Sprachen \& Referenzen}
+
+\begin{tabularx}{\textwidth}{@{}p{2.25cm}X@{}}
+\textit{Qualitativ} & Experteninterviews und halbstrukturierte Interviews, Fokusgruppen, teilnehmende Beobachtung, Dokumenten- und Inhaltsanalyse, qualitative Codierung, Literatur- und Online-Recherchen. \\[4.5pt]
+\textit{Quantitativ} & Umfragedesign und Umfrageexperimente, Kausalinferenz, statistisches Lernen, Text-as-Data, NLP. \\[4.5pt]
+\textit{Software} & MAXQDA, R (inkl. Paketentwicklung), Python, SQL, Git, Web Scraping, LimeSurvey, Quarto. \\[4.5pt]
+\textit{Sprachen} & Deutsch (C2, Arbeitssprache), Englisch (Muttersprache), Französisch (Grundkenntnisse). \\[4.5pt]
+\textit{Referenzen} & Prof. Dr. David Kaufmann, ETH Zürich (SPUR), \href{mailto:david.kaufmann@ethz.ch}{david.kaufmann@ethz.ch} \textbullet\ Dr. Tobias Arnold, Interface Politikstudien, \href{mailto:arnold@interface-pol.ch}{arnold@interface-pol.ch} \\
+\end{tabularx}
+
+\end{document}

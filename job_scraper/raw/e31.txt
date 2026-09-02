@@ -1,0 +1,1 @@
+{"error":"unknown flag --id for 'detail' - flags are never silently ignored, because a discarded filter changes what the search returns; see --help for the supported flags","code":"UNKNOWN_FLAG"}

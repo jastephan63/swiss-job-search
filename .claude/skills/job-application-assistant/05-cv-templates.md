@@ -4,6 +4,23 @@ framework_version: 1.4.3
 
 # CV Templates and Tailoring Guide
 
+<!-- ACTIVE-TEMPLATE:START -->
+> **ACTIVE TEMPLATE: `stephan-article`** (registered via /add-template, 2026-09-02)
+>
+> The stock moderncv guidance below is **inactive**. Draft from the registered template instead.
+>
+> - **Source:** `templates/cv/stephan-article/template.tex` (English) or `template-de.tex` (German)
+> - **Compile:** `pdflatex -interaction=nonstopmode <file>.tex`, run **twice**
+> - **Engine:** pdflatex via TinyTeX. Add `$HOME/Library/TinyTeX/bin/universal-darwin` to PATH first — it is not on the default PATH.
+> - **Pages:** 1 for consulting and developer roles, 2 for research and public-sector roles. Never a partial page.
+> - **Fonts:** Latin Modern + microtype, T1. No fontspec, no lualatex/xelatex needed.
+> - **Style:** no em-dashes, no `ß`, single column, no graphics, no photo. Bold sparingly.
+> - **Track selector:** the coloured line under the name states the positioning and MUST be rewritten per application.
+> - Full details: `templates/cv/stephan-article/TEMPLATE.md`
+>
+> **Never redirect compiler output to `<jobname>.out`** — hyperref owns that filename; clobbering it makes the next run fail with `Missing { inserted`.
+<!-- ACTIVE-TEMPLATE:END -->
+
 <!-- SETUP: Profile statements and section ordering are personalized by running /setup -->
 
 ## Template: LaTeX moderncv (Banking Style)

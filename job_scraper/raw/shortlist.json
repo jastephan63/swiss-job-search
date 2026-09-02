@@ -1,0 +1,579 @@
+[
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "bd4a0742-93e9-4e7c-8535-b89094de8046",
+  "title": "Data Engineer (a) in Zürich",
+  "company": "Axept Business Software AG",
+  "location": "Kemptthal",
+  "date": "2026-09-02",
+  "url": "https://www.jobs.ch/en/vacancies/detail/bd4a0742-93e9-4e7c-8535-b89094de8046/",
+  "tracks": [
+   "dev",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/bd4a0742-93e9-4e7c-8535-b89094de8046/",
+   "https://www.jobs.ch/en/vacancies/detail/bd4a0742-93e9-4e7c-8535-b89094de8046/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "9765d202-9ef6-4f14-9f79-f75acce3ccca",
+  "title": "Risikomanagerin und Datenanalystin (m/w/d)",
+  "company": "Eidgenössische Finanzmarktaufsicht FINMA",
+  "location": "CH",
+  "date": "2026-09-02",
+  "url": "https://www.jobs.ch/de/stellenangebote/detail/9765d202-9ef6-4f14-9f79-f75acce3ccca/",
+  "tracks": [
+   "dev",
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/9765d202-9ef6-4f14-9f79-f75acce3ccca/",
+   "https://www.jobs.ch/en/vacancies/detail/9765d202-9ef6-4f14-9f79-f75acce3ccca/"
+  ]
+ },
+ {
+  "track": "research",
+  "portal": "jobs-ch-search",
+  "id": "aec9153f-70fb-4bd2-9414-b6f1e0b3ef93",
+  "title": "Risikomanagerin und Datenanalystin (m/w/d)",
+  "company": "Eidgenössische Finanzmarktaufsicht (FINMA)",
+  "location": "CH",
+  "date": "2026-09-02",
+  "url": "https://www.jobs.ch/de/stellenangebote/detail/aec9153f-70fb-4bd2-9414-b6f1e0b3ef93/",
+  "tracks": [
+   "research"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/aec9153f-70fb-4bd2-9414-b6f1e0b3ef93/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4462158714",
+  "title": "Principal Data Scientist",
+  "company": "Kanadevia Inova",
+  "location": "Zurich, Zurich, Switzerland",
+  "date": "2026-09-02",
+  "url": "https://ch.linkedin.com/jobs/view/principal-data-scientist-at-kanadevia-inova-4462158714",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/principal-data-scientist-at-kanadevia-inova-4462158714"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "1bbbd1d5-ae01-485c-a47c-7c624566258d",
+  "title": "Senior Data Engineer (w/m/d)",
+  "company": "Pax, Schweizerische Lebensversicherungs-Gesellschaft AG",
+  "location": "Basel",
+  "date": "2026-09-01",
+  "url": "https://www.jobs.ch/en/vacancies/detail/1bbbd1d5-ae01-485c-a47c-7c624566258d/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/1bbbd1d5-ae01-485c-a47c-7c624566258d/",
+   "https://www.jobs.ch/en/vacancies/detail/1bbbd1d5-ae01-485c-a47c-7c624566258d/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4451472462",
+  "title": "Data Scientist KI (m/*/w) 80 - 100%",
+  "company": "Direktion der Justiz und des Innern Kanton Zürich",
+  "location": "Zurich, Zurich, Switzerland",
+  "date": "2026-09-01",
+  "url": "https://ch.linkedin.com/jobs/view/data-scientist-ki-m-w-80-100%25-at-direktion-der-justiz-und-des-innern-kanton-z%C3%BCrich-4451472462",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/data-scientist-ki-m-w-80-100%25-at-direktion-der-justiz-und-des-innern-kanton-z%C3%BCrich-4451472462"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4461721508",
+  "title": "Data Scientist (m/f/d)",
+  "company": "Sonova Group",
+  "location": "Stäfa, Zurich, Switzerland",
+  "date": "2026-09-01",
+  "url": "https://ch.linkedin.com/jobs/view/data-scientist-m-f-d-at-sonova-group-4461721508",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/data-scientist-m-f-d-at-sonova-group-4461721508"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4462084552",
+  "title": "Audio Machine Learning Data Engineer",
+  "company": "Logitech",
+  "location": "Lausanne, Vaud, Switzerland",
+  "date": "2026-09-01",
+  "url": "https://ch.linkedin.com/jobs/view/audio-machine-learning-data-engineer-at-logitech-4462084552",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/audio-machine-learning-data-engineer-at-logitech-4462084552"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "42216cdf-4b95-4bc6-acad-6087b5cd8ecb",
+  "title": "Program Manager / Research Associate - Knowledge & Modelling Infrastructure",
+  "company": "Humanis AG",
+  "location": "CH",
+  "date": "2026-08-31",
+  "url": "https://www.jobs.ch/en/vacancies/detail/42216cdf-4b95-4bc6-acad-6087b5cd8ecb/",
+  "tracks": [
+   "dev",
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/42216cdf-4b95-4bc6-acad-6087b5cd8ecb/",
+   "https://www.jobs.ch/en/vacancies/detail/42216cdf-4b95-4bc6-acad-6087b5cd8ecb/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4461292600",
+  "title": "Senior AI/ML Data Scientist",
+  "company": "Roche",
+  "location": "Basel, Basel, Switzerland",
+  "date": "2026-08-31",
+  "url": "https://ch.linkedin.com/jobs/view/senior-ai-ml-data-scientist-at-roche-4461292600",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/senior-ai-ml-data-scientist-at-roche-4461292600"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4459221814",
+  "title": "Ingénieur Data Scientist et visualisation des données",
+  "company": "Etat de Vaud",
+  "location": "Renens, Vaud, Switzerland",
+  "date": "2026-08-31",
+  "url": "https://ch.linkedin.com/jobs/view/ing%C3%A9nieur-data-scientist-et-visualisation-des-donn%C3%A9es-at-etat-de-vaud-4459221814",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/ing%C3%A9nieur-data-scientist-et-visualisation-des-donn%C3%A9es-at-etat-de-vaud-4459221814"
+  ]
+ },
+ {
+  "track": "research",
+  "portal": "jobs-ch-search",
+  "id": "9fe67ed9-8fc5-409a-96eb-bb4b92eeec4a",
+  "title": "Program Manager & Head of Knowledge (Analytical Systems, Evaluation & AI Enablement)",
+  "company": "Humanis AG",
+  "location": "CH",
+  "date": "2026-08-28",
+  "url": "https://www.jobs.ch/de/stellenangebote/detail/9fe67ed9-8fc5-409a-96eb-bb4b92eeec4a/",
+  "tracks": [
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/9fe67ed9-8fc5-409a-96eb-bb4b92eeec4a/",
+   "https://www.jobs.ch/en/vacancies/detail/9fe67ed9-8fc5-409a-96eb-bb4b92eeec4a/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "2657f507-f7e4-477e-bb1a-1a90f3812a95",
+  "title": "Senior Data Analyst & Data Scientist",
+  "company": "RUAG MRO Holding AG",
+  "location": "CH",
+  "date": "2026-08-28",
+  "url": "https://www.jobs.ch/en/vacancies/detail/2657f507-f7e4-477e-bb1a-1a90f3812a95/",
+  "tracks": [
+   "dev",
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/2657f507-f7e4-477e-bb1a-1a90f3812a95/",
+   "https://www.jobs.ch/en/vacancies/detail/2657f507-f7e4-477e-bb1a-1a90f3812a95/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "9bda7ef3-7a5f-4204-bb28-b41f0c92e358",
+  "title": "Senior Data Analyst & Data Scientist",
+  "company": "RUAG AG",
+  "location": "CH",
+  "date": "2026-08-28",
+  "url": "https://www.jobs.ch/en/vacancies/detail/9bda7ef3-7a5f-4204-bb28-b41f0c92e358/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/senior-data-analyst-data-scientist-at-ruag-4458051096",
+   "https://www.jobs.ch/en/vacancies/detail/9bda7ef3-7a5f-4204-bb28-b41f0c92e358/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "d55056ac-0d1c-482d-90d7-df1b550d2482",
+  "title": "Wissenschaftliche Mitarbeit Partnerschaften & PSE",
+  "company": "Kanton Basel-Stadt Präsidialdepartement",
+  "location": "Basel",
+  "date": "2026-08-28",
+  "url": "https://www.jobs.ch/en/vacancies/detail/d55056ac-0d1c-482d-90d7-df1b550d2482/",
+  "tracks": [
+   "dev",
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/d55056ac-0d1c-482d-90d7-df1b550d2482/",
+   "https://www.jobs.ch/en/vacancies/detail/d55056ac-0d1c-482d-90d7-df1b550d2482/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "ae3efd84-0cea-4763-bbff-74006ee30ade",
+  "title": "Wissenschaftliche Mitarbeit Entwicklung & Zusammenarbeit",
+  "company": "Kanton Basel-Stadt Präsidialdepartement",
+  "location": "Basel",
+  "date": "2026-08-28",
+  "url": "https://www.jobs.ch/en/vacancies/detail/ae3efd84-0cea-4763-bbff-74006ee30ade/",
+  "tracks": [
+   "dev",
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/ae3efd84-0cea-4763-bbff-74006ee30ade/",
+   "https://www.jobs.ch/en/vacancies/detail/ae3efd84-0cea-4763-bbff-74006ee30ade/"
+  ]
+ },
+ {
+  "track": "research",
+  "portal": "jobs-ch-search",
+  "id": "e83329ec-6904-4367-b285-6625d54fbb06",
+  "title": "Forschungsprojektmitarbeiter/-in für die Dozentur strategische Studien (MILAK)",
+  "company": "Schweizer Armee - Kommando Ausbildung Kdo Ausb",
+  "location": "CH",
+  "date": "2026-08-27",
+  "url": "https://www.jobs.ch/de/stellenangebote/detail/e83329ec-6904-4367-b285-6625d54fbb06/",
+  "tracks": [
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/e83329ec-6904-4367-b285-6625d54fbb06/",
+   "https://www.jobs.ch/en/vacancies/detail/e83329ec-6904-4367-b285-6625d54fbb06/"
+  ]
+ },
+ {
+  "track": "survey",
+  "portal": "jobs-ch-search",
+  "id": "c00ed5de-2a6a-45a8-a256-f9c70fd79822",
+  "title": "Business Intelligence & Transformation Manager",
+  "company": "Vontobel Beteiligungen AG",
+  "location": "CH",
+  "date": "2026-08-27",
+  "url": "https://www.jobs.ch/en/vacancies/detail/c00ed5de-2a6a-45a8-a256-f9c70fd79822/",
+  "tracks": [
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/en/vacancies/detail/c00ed5de-2a6a-45a8-a256-f9c70fd79822/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4459853078",
+  "title": "Ingénieur en Data Science (H/F)",
+  "company": "Bourse Direct",
+  "location": "Lausanne Metropolitan Area",
+  "date": "2026-08-27",
+  "url": "https://ch.linkedin.com/jobs/view/ing%C3%A9nieur-en-data-science-h-f-at-bourse-direct-4459853078",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/ing%C3%A9nieur-en-data-science-h-f-at-bourse-direct-4459853078"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4431239512",
+  "title": "Wissenschaftlicher Mitarbeiter Data Science / Physik 80-100% (m/w/d)",
+  "company": "Saab",
+  "location": "Thun, Berne, Switzerland",
+  "date": "2026-08-27",
+  "url": "https://ch.linkedin.com/jobs/view/wissenschaftlicher-mitarbeiter-data-science-physik-80-100%25-m-w-d-at-saab-4431239512",
+  "tracks": [
+   "dev",
+   "research"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/wissenschaftlicher-mitarbeiter-data-science-physik-80-100%25-m-w-d-at-saab-4431239512"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "4b4044de-e9e3-462b-9af2-78b424d4e323",
+  "title": "Expert Data Engineer (w/m) 80-100%",
+  "company": "CSS",
+  "location": "Luzern / hybrid",
+  "date": "2026-08-26",
+  "url": "https://www.jobs.ch/en/vacancies/detail/4b4044de-e9e3-462b-9af2-78b424d4e323/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/4b4044de-e9e3-462b-9af2-78b424d4e323/",
+   "https://www.jobs.ch/en/vacancies/detail/4b4044de-e9e3-462b-9af2-78b424d4e323/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4457261667",
+  "title": "Data Scientist - Search Retrieval (f/m/d)",
+  "company": "Digitec Galaxus AG",
+  "location": "Zurich, Zurich, Switzerland",
+  "date": "2026-08-26",
+  "url": "https://ch.linkedin.com/jobs/view/data-scientist-search-retrieval-f-m-d-at-digitec-galaxus-ag-4457261667",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/data-scientist-search-retrieval-f-m-d-at-digitec-galaxus-ag-4457261667"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "98e8e3b6-83a3-4921-bcb9-660f6b7f1df2",
+  "title": "Teamleiter/-in Data Engineering",
+  "company": "Bundesamt für Meteorologie und Klimatologie MeteoSchweiz",
+  "location": "Zürich",
+  "date": "2026-08-25",
+  "url": "https://www.jobs.ch/en/vacancies/detail/98e8e3b6-83a3-4921-bcb9-660f6b7f1df2/",
+  "tracks": [
+   "dev",
+   "research"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/98e8e3b6-83a3-4921-bcb9-660f6b7f1df2/",
+   "https://www.jobs.ch/en/vacancies/detail/98e8e3b6-83a3-4921-bcb9-660f6b7f1df2/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "2ced0dec-bec4-460d-9e25-57da966d2db6",
+  "title": "Expert Data Engineer",
+  "company": "CSS",
+  "location": "Luzern / hybrid",
+  "date": "2026-08-25",
+  "url": "https://www.jobs.ch/en/vacancies/detail/2ced0dec-bec4-460d-9e25-57da966d2db6/",
+  "tracks": [
+   "dev",
+   "research",
+   "survey"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/2ced0dec-bec4-460d-9e25-57da966d2db6/",
+   "https://www.jobs.ch/en/vacancies/detail/2ced0dec-bec4-460d-9e25-57da966d2db6/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "2e5a991f-2181-4703-aaac-18506299a8df",
+  "title": "Developer Data Analytics (80 - 100%)",
+  "company": "SIGA Services AG",
+  "location": "Ruswil",
+  "date": "2026-08-25",
+  "url": "https://www.jobs.ch/en/vacancies/detail/2e5a991f-2181-4703-aaac-18506299a8df/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://www.jobs.ch/en/vacancies/detail/2e5a991f-2181-4703-aaac-18506299a8df/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "74fcf067-9677-42d9-bb60-5597214c44ec",
+  "title": "Senior Data Engineer (befristet)",
+  "company": "Schweizerische Nationalbank",
+  "location": "CH",
+  "date": "2026-08-24",
+  "url": "https://www.jobs.ch/en/vacancies/detail/74fcf067-9677-42d9-bb60-5597214c44ec/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/74fcf067-9677-42d9-bb60-5597214c44ec/",
+   "https://www.jobs.ch/en/vacancies/detail/74fcf067-9677-42d9-bb60-5597214c44ec/"
+  ]
+ },
+ {
+  "track": "research",
+  "portal": "jobs-ch-search",
+  "id": "edbaca50-fc2f-478e-b7cc-159ed27abb38",
+  "title": "Scientific Assistant – Biomedical Data Science & Spinal Cord Injury Research",
+  "company": "ETH Zürich",
+  "location": "Zürich",
+  "date": "2026-08-24",
+  "url": "https://www.jobs.ch/en/vacancies/detail/edbaca50-fc2f-478e-b7cc-159ed27abb38/",
+  "tracks": [
+   "research"
+  ],
+  "urls": [
+   "https://www.jobs.ch/en/vacancies/detail/edbaca50-fc2f-478e-b7cc-159ed27abb38/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "18328a5f-42ac-4a7f-89c0-dd7dff761a79",
+  "title": "Azure Cloud Data Engineer (m/w/d)",
+  "company": "Sympany",
+  "location": "Basel",
+  "date": "2026-08-24",
+  "url": "https://www.jobs.ch/en/vacancies/detail/18328a5f-42ac-4a7f-89c0-dd7dff761a79/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://www.jobs.ch/de/stellenangebote/detail/18328a5f-42ac-4a7f-89c0-dd7dff761a79/",
+   "https://www.jobs.ch/en/vacancies/detail/18328a5f-42ac-4a7f-89c0-dd7dff761a79/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4455340474",
+  "title": "Data Scientist (m/f/d)",
+  "company": "Syngenta",
+  "location": "Stein, Aargau, Switzerland",
+  "date": "2026-08-24",
+  "url": "https://ch.linkedin.com/jobs/view/data-scientist-m-f-d-at-syngenta-4455340474",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/data-scientist-m-f-d-at-syngenta-4455340474"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4458172116",
+  "title": "Energy Data Engineer",
+  "company": "enshift AG",
+  "location": "Baar, Zug, Switzerland",
+  "date": "2026-08-24",
+  "url": "https://ch.linkedin.com/jobs/view/energy-data-engineer-at-enshift-ag-4458172116",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/energy-data-engineer-at-enshift-ag-4458172116"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "eb7ac851-97fa-4de9-8d6f-75fcb1e3f267",
+  "title": "Senior, Data Engineer",
+  "company": "Dept Digital Marketing AG",
+  "location": "CH",
+  "date": "2026-08-22",
+  "url": "https://www.jobs.ch/en/vacancies/detail/eb7ac851-97fa-4de9-8d6f-75fcb1e3f267/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://www.jobs.ch/en/vacancies/detail/eb7ac851-97fa-4de9-8d6f-75fcb1e3f267/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "jobs-ch-search",
+  "id": "6cef2528-4f34-4afc-8498-45ca54787319",
+  "title": "Data Scientist (a)",
+  "company": "Kanton Luzern",
+  "location": "Luzern",
+  "date": "2026-08-21",
+  "url": "https://www.jobs.ch/en/vacancies/detail/6cef2528-4f34-4afc-8498-45ca54787319/",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/data-scientist-a-at-kanton-luzern-4457352162",
+   "https://www.jobs.ch/en/vacancies/detail/6cef2528-4f34-4afc-8498-45ca54787319/"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4457329061",
+  "title": "Data Scientist/in (80–100%)",
+  "company": "LUSTAT Statistik Luzern",
+  "location": "Lucerne, Switzerland",
+  "date": "2026-08-21",
+  "url": "https://ch.linkedin.com/jobs/view/data-scientist-in-80%E2%80%93100%25-at-lustat-statistik-luzern-4457329061",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/data-scientist-in-80%E2%80%93100%25-at-lustat-statistik-luzern-4457329061"
+  ]
+ },
+ {
+  "track": "dev",
+  "portal": "linkedin-search",
+  "id": "4446033820",
+  "title": "Principal Data Scientist",
+  "company": "On",
+  "location": "Zurich, Zurich, Switzerland",
+  "date": "2026-08-19",
+  "url": "https://ch.linkedin.com/jobs/view/principal-data-scientist-at-on-4446033820",
+  "tracks": [
+   "dev"
+  ],
+  "urls": [
+   "https://ch.linkedin.com/jobs/view/principal-data-scientist-at-on-4446033820"
+  ]
+ }
+]

@@ -1,0 +1,93 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}\usepackage{microtype}}{}
+\usepackage[english]{babel}
+\usepackage[margin=1.0cm]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{cvblue}{HTML}{2E5A8C}
+\hypersetup{colorlinks=true, urlcolor=cvblue, linkcolor=cvblue}
+
+\setlist[itemize]{leftmargin=1.2em, itemsep=1.5pt, topsep=1.5pt, parsep=0pt}
+\linespread{0.965}\selectfont
+\setlength{\parindent}{0pt}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.38em}\par
+  {\color{cvblue}\large\bfseries #1}\par
+  \vspace{-0.28em}\textcolor{cvblue}{\rule{\linewidth}{0.6pt}}\par
+  \vspace{0.26em}}
+
+\newcommand{\cventry}[3]{\vspace{0.32em}\textbf{#1}\hfill #3\\[1pt]\textit{#2}\par\vspace{0pt}}
+
+\begin{document}
+\pagestyle{empty}
+
+%% ============================================================
+%% CV [First] [Last], cynkra GmbH, Zurich. Unsolicited application.
+%% English, single page, single column, no graphics (ATS-safe).
+%% No em-dashes; only normal hyphens in compounds.
+%% ============================================================
+
+{\Huge\bfseries [First] [Last]}\\[0.15em]
+{\color{cvblue}\large R and Python developer for data products in the public sector}\\[0.5em]
+[Phone] \textbullet\ \href{mailto:[your.email@example.com]}{[your.email@example.com]} \textbullet\ \href{[LinkedInURL]}{[LinkedInHandle]} \textbullet\ Zürich \textbullet\ English (native), German (C2)
+
+\vspace{4pt}
+
+\cvsection{Profile}
+
+Developer and data scientist who writes the tools rather than only using them: R packages, R and Python backends, data pipelines and interactive applications, with Git, code review, automated tests and reproducible workflows as a matter of course. My clients and employers have been cantons, cities, federal offices and research institutions, so I can sit in a requirements meeting with a Fachstelle in German and then go and write the package.
+
+\cvsection{Professional Experience}
+
+\cventry{Data Scientist \& Service Designer, Digital Government}{Kanton Schaffhausen, Switzerland (part-time, fixed-term)}{since May 2026}
+\begin{itemize}
+\item Software development in R and Python for the canton's digital services: the data architecture and backend behind the \textit{Formulare online} platform, including data modelling, structured collection instruments and traceable data capture.
+\item Build the interfaces and pipelines between specialist departments, IT and information security, and lead the migration of public services to e-services.
+\item Audit data sources and processes in production, trace error sources, and improve data quality in live operation.
+\end{itemize}
+
+\cventry{Research Associate \& Doctoral Researcher}{LMU Munich, Germany (fixed-term, remote from Zürich)}{since 2026}
+\begin{itemize}
+\item Build reproducible analysis and survey workflows in R, with Git-based collaboration, code review and automated tests as part of daily development.
+\item Program survey experiments and apply natural language processing in R and Python to structure open-ended data at scale.
+\end{itemize}
+
+\cventry{Research Associate \& Data Scientist}{Sotomo, Zürich, Switzerland}{May 2025 to Jan 2026}
+\begin{itemize}
+\item Developed, documented and maintained the internal R packages for weighting, automated reporting and visualisation that the team adopted as its standard analysis infrastructure, replacing code rewritten project by project.
+\item \textbf{[ADD: one Shiny application, what it did and who used it.]}
+\item Automated the data flows between databases and survey tools with SQL and R, and managed large survey datasets end to end, from sampling and weighting to report and policy brief.
+\item Owned client projects from design to presentation, including a national health-behaviour study for CSS and a Smart City Zürich study of digital service use across more than 10,000 residents.
+\end{itemize}
+
+\cventry{Research Associate, Space \& Transport}{Interface Politikstudien, Lucerne, Switzerland}{Aug. 2024 to Apr. 2025}
+\begin{itemize}
+\item Owned the data workstream on the annual passenger study for Flughafen Zürich AG, roughly 100,000 interviews over two weeks, including preparation and validation of large survey and administrative datasets.
+\item Delivered evaluations for federal, cantonal and municipal clients, including the Parliamentary Control of the Administration and the SWICE study for the Federal Office of Energy.
+\end{itemize}
+
+\cventry{Research Assistant, Spatial Development \& Urban Policy}{ETH Zürich, Switzerland}{Oct. 2021 to June 2024}
+\begin{itemize}
+\item Applied NLP and web scraping in R and Python to collect and structure around 300 regional planning documents, and fielded survey experiments across eight European cities in eight languages.
+\item Co-authored \textit{Democratic Discrepancies in Urban Sustainable Development} in \textbf{Nature Sustainability} (Kaufmann et al., 2024).
+\end{itemize}
+
+\cvsection{Education}
+
+\cventry{MA Comparative and International Studies}{ETH Zürich, Switzerland}{2021 to 2024}
+\cventry{BA Political Science \& Philosophy}{Indiana University Bloomington, USA}{2018 to 2021}
+
+\cvsection{Technical Skills}
+
+\textbf{Development:} R, including package development, documentation and automated tests; Python; SQL; JavaScript; SAS; Git and the command line; code review; reproducible workflows; Quarto and R Markdown; Posit/RStudio; \LaTeX.\\
+\textbf{Applications \& data:} Shiny applications; dashboards and automated reporting; data modelling and relational databases; ETL pipelines between databases and collection tools; validation of large survey and administrative datasets.\\
+\textbf{Analysis:} multivariate analysis; causal inference; statistical learning; sampling and weighting; MrP and MrsP; survey and experimental design; text-as-data and NLP.\\
+\textbf{Domains:} cantonal and municipal administration, federal offices, research institutions, survey research.
+
+\end{document}
