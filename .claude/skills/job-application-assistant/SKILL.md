@@ -18,7 +18,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 
 ### Step 1: Research & Evaluate Fit
 - Fetch the job posting content (use WebFetch for URLs). **A 403 is not a dead end** - follow the escalation order in `09-web-research.md` before concluding a page is unavailable, and prefer the employer's own careers posting over an aggregator listing
-- **Swiss postings: read `10-swiss-market.md` first.** Establish whether the employer is Swiss-domestic or international before anything else - dossier contents, CV photo, and application language all follow from that one call. Apply the market-specific evaluation additions in its §9 alongside `04-job-evaluation.md`
+- **Swiss postings: read `10-swiss-market.md` first.** Establish whether the employer is Swiss-domestic or international, since it sets the application language. Apply the market-specific evaluation additions in its §9 alongside `04-job-evaluation.md`
 - Keep the **full posting text verbatim** for Step 3b to archive - never a summary
 - Analyze the posting for required competencies, keywords, and priorities
 - Research the company (website, LinkedIn, mission, recent news), per `09-web-research.md`
@@ -31,7 +31,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 - Before writing either document, derive `<company>_<role>` once by the **Subfolder naming** rule in `documents/README.md`; reuse that exact value for the CV, cover letter, and Step 3b archive path. If the rule says to stop because the derived name is empty, stop before creating any file.
 - Read the most relevant existing CV variant from `cv/` as a starting point
 - Follow the guidelines in `05-cv-templates.md`
-- **Swiss postings:** apply `10-swiss-market.md` §2 (photo) and §7 (Swiss High German - `ss`, never `ß`). Never let a CV claim outrun the grade of the Arbeitszeugnis backing it (§3)
+- **Swiss postings:** write in Swiss High German where the posting is German (`10-swiss-market.md` §7 - `ss`, never `ß`)
 - Create `cv/main_<company>_<role>.tex` with tailored content
 - Adjust: profile statement, skills section, experience bullet emphasis, section order
 
@@ -40,7 +40,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 - Follow the template structure in `06-cover-letter-templates.md`
 - Create `cover_letters/cover_<company>_<role>.tex`
 - Ensure the letter connects specific experience to the role requirements
-- **Swiss postings:** write in the posting's own language (`10-swiss-market.md` §7). State the Pensum applied for when the posting gives a range (§4) and the earliest realistic start date given the user's notice period (§6). When the employer is Swiss-domestic, list in the final output which Arbeitszeugnisse and diplomas the user must append to complete the dossier (§1) - do not call the application ready to send while those are missing
+- **Swiss postings:** write in the posting's own language (`10-swiss-market.md` §7). State the Pensum applied for when the posting gives a range (§4) and the earliest realistic start date given the user's notice period (§6). Only when the posting itself asks for a full dossier, note which certificates to append (§1)
 
 ### Step 3b: Record the Application
 - Run this once both documents exist. A CV or cover letter drafted alone is not yet an application.
@@ -68,7 +68,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 | `07-interview-prep.md` | STAR examples, tough questions, roleplay guidelines |
 | `08-application-forms.md` | Portal free-text fields: self-introduction, project entries, character-limited pitches |
 | `09-web-research.md` | Fetching postings and company pages: trust boundary, the WebFetch 403 fallback, escalation order, claim verification |
-| `10-swiss-market.md` | Swiss conventions: dossier contents, CV photo, Arbeitszeugnis grading, Pensum, CHF/13th month, notice periods, Swiss High German |
+| `10-swiss-market.md` | Swiss conventions: application language and Swiss High German, Pensum, CHF/13th month/Pensionskasse, cantonal tax, notice periods |
 
 ---
 

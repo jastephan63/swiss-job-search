@@ -34,16 +34,15 @@ The four Danish demo portals from upstream ship disabled. `linkedin-search` and
 
 **A Swiss market reference** at
 [`10-swiss-market.md`](.claude/skills/job-application-assistant/10-swiss-market.md), wired into
-the `/apply` workflow. It covers the things that have no Danish or Anglo-American equivalent:
+the `/apply` workflow:
 
-- **The Bewerbungsdossier** — cover letter, CV, *Arbeitszeugnisse*, diplomas, as one PDF. Omitting
-  the references is the most common way a Swiss-domestic application reads as incomplete.
-- **Arbeitszeugnis grading** — the coded reference language, on the Swiss 1–6 scale where **6 is
-  best** (the inverse of the German scale). `stets zur vollsten Zufriedenheit` is a 6;
-  `hat sich bemüht` is a 1. Used to keep CV claims from outrunning the evidence backing them.
-- **CV photo** — expected by Swiss-domestic employers, wrong for Anglo-American processes.
 - **Swiss High German** — `ß` does not exist here, ever. `Strasse`, `Freundliche Grüsse`.
-- **Pensum, 13th month, Pensionskasse, cantonal tax, and OR Art. 335b/335c notice periods.**
+- **Pensum** — the workload percentage, treated as a real negotiating dimension rather than a
+  formality, and filterable from `/scrape`.
+- **Compensation** — CHF annual gross, the 12-vs-13-month basis, Pensionskasse, and the cantonal
+  tax effect that can make a larger gross the smaller net.
+- **Notice periods** — OR Art. 335b/335c, for start dates that survive contact with reality.
+- **Application language** — which language to apply in, and the register that goes with it.
 
 **Bilingual search.** German and English queries return substantially different result sets on
 jobs.ch and neither is a superset of the other, so `/scrape` runs both.

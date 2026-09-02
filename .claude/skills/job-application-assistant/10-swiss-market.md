@@ -1,131 +1,48 @@
 # Swiss Market Conventions
 
 Rules that apply to applications in Switzerland and nowhere else in this framework. Read
-this before evaluating a Swiss posting (Step 1), before assembling a dossier (Steps 2–3),
-and before interview prep (Step 4).
+this before evaluating a Swiss posting (Step 1), before drafting (Steps 2–3), and before
+interview prep (Step 4).
 
 Where a convention differs by language region or by employer type, that is stated. The
 biggest single split is **Swiss-domestic employers** (SMEs, cantonal and federal
 administration, healthcare, trades, insurance) versus **international employers**
 (pharma in Basel, banks and big tech in Zürich, EPFL/ETH, CERN, commodity trading in
-Geneva/Zug). The first group expects a Swiss dossier in the local language. The second
-often runs entirely in English on Anglo-American norms. Applying the wrong set of
-conventions is a visible mistake in both directions.
+Geneva/Zug). The first group applies in the local language; the second often runs entirely
+in English on Anglo-American norms. Getting the language wrong is the visible mistake.
 
 ---
 
-## 1. The dossier
+## 1. What to send
 
-A Swiss application is a **Bewerbungsdossier**, not a CV plus cover letter. Unless the
-posting or portal says otherwise, deliver **one PDF** containing, in this order:
+Default to **CV + cover letter**. That is what most Swiss applications are, including at
+consultancies, research institutes, and private-sector employers, and it is what online
+portals accept.
 
-1. **Motivationsschreiben** (cover letter) — 1 page
-2. **Lebenslauf** (CV) — 2 pages, 3 only for senior or academic profiles
-3. **Arbeitszeugnisse** — full copies, most recent first
-4. **Diplome** — degree certificates, plus transcripts where relevant
-5. **Weiterbildungen / Zertifikate** — only those relevant to the posting
-
-Items 3–5 are what makes this a dossier. Omitting Arbeitszeugnisse from a Swiss-domestic
-application is not a minor omission — it is the most common reason a Swiss recruiter treats
-an application as incomplete, because the Zeugnis is the primary evidence instrument in
-this market (see §3).
-
-International employers and most online portals want CV + cover letter only, with
-certificates on request. Follow the posting.
-
-> **Framework note.** `/apply` produces items 1 and 2. Items 3–5 are the user's own files
-> in `documents/diplomas/` and `documents/references/`. When the target is a
-> Swiss-domestic employer, say so explicitly in the final output: name which documents the
-> user must append before sending, and do not describe the application as ready to submit
-> when a dossier is expected and the references are missing.
-
----
+The exception is parts of the **public sector** — cantonal and municipal offices, statistics
+offices, administrations — where a posting may ask for a full *Bewerbungsdossier*: cover
+letter, CV, Arbeitszeugnisse, and diplomas combined into one PDF, in that order. Send the
+dossier when the posting asks for it. Do not volunteer one otherwise; it is not the default
+and padding an application with certificates nobody asked for does not help.
 
 ## 2. Photo on the CV
 
-**Include one** for Swiss-domestic employers, especially in German-speaking Switzerland.
-It remains the default expectation, and its absence reads as an incomplete CV rather than
-as a principled stance.
-
-- Professional headshot, neutral background, business attire matched to the sector
-- Top of page 1, typically upper right
-- Never a cropped holiday photo
-
-**Omit it** for international employers running Anglo-American processes, for anything
-routed through a US or UK parent company's ATS, and wherever the posting says not to send
-one. Some large Swiss employers now explicitly request no photo to support anonymised
-screening — follow that instruction when given.
-
-This is the opposite of US and UK convention. When in doubt for a mixed employer, the
-photo is the lower-risk choice in the German-speaking market and the higher-risk choice
-in an English-language international process.
-
----
+Optional, and increasingly skipped. Some Swiss-domestic employers still expect one and some
+explicitly request none for anonymised screening. Follow the posting; when it is silent,
+either choice is defensible. Omit it for anything running an Anglo-American process or a US
+or UK parent company's ATS, where a photo is actively wrong.
 
 ## 3. Arbeitszeugnis — the reference certificate
 
-The single most Switzerland-specific element, and the one with no equivalent in the Danish
-or Anglo-American frameworks.
+Under **OR Art. 330a**, every Swiss employer owes a written reference on request, and the
+convention is that it is worded positively throughout with the real assessment carried by
+formula choice. Two practical consequences:
 
-Under **OR Art. 330a**, an employee may demand a written reference from every employer
-covering the nature and duration of employment, performance, and conduct. Case law
-requires it to be simultaneously **truthful** and **benevolent**. Those two duties
-conflict, and the profession resolved the conflict by developing a **coded language**: a
-Zeugnis is superficially positive throughout, and the actual grade is carried by precise
-formula choice.
-
-### The grading scale
-
-Swiss Zeugnisse map to the **Swiss school scale of 1–6, where 6 is the best** — the
-inverse of the German 1–6 scale. Two levers set the grade:
-
-- **Intensity**: `vollsten` > `vollen` > no qualifier
-- **Time component**: `stets` / `jederzeit` means continuously; its *absence* drops the
-  rating by roughly one grade
-
-| Formula | Grade | Reads as |
-|---|---|---|
-| `stets zur vollsten Zufriedenheit` | 6 | Excellent |
-| `zur vollsten Zufriedenheit` | 5–6 | Very good |
-| `stets zur vollen Zufriedenheit` | 5 | Very good |
-| `zur vollen Zufriedenheit` | 4 | Good |
-| `stets zur Zufriedenheit` | 3–4 | Satisfactory |
-| `zur Zufriedenheit` | 3 | Sufficient — a weak reference |
-| `im Grossen und Ganzen zur Zufriedenheit` | 2 | Poor |
-| `hat sich bemüht` / `war stets bemüht` | 1 | Failing. Effort without result |
-
-### Other signals
-
-- **The closing matters.** A full ending thanks the employee, expresses regret at the
-  departure, and wishes them well. A bare `Wir wünschen ihm für die Zukunft alles Gute`
-  with no thanks and no regret is a deliberate cold ending.
-- **Reason for leaving.** `auf eigenen Wunsch` (own request) is neutral-positive. Silence
-  where a reason would be expected invites the reader to assume the worst.
-- **Arbeitsbestätigung vs Arbeitszeugnis.** A bare *Arbeitsbestätigung* confirms only
-  dates and role. Supplying one where a qualified *Arbeitszeugnis* is expected signals a
-  problem, so never substitute one silently.
-- **Zwischenzeugnis** is an interim reference from an ongoing role — the correct document
-  when the user is still employed and cannot yet ask for a final one.
-- **Conduct clause.** Behaviour toward superiors, colleagues, and clients is graded
-  separately, and the *order* is meaningful. Colleagues listed before superiors, or
-  superiors omitted, is a recognised negative marker.
-
-### How this framework uses it
-
-**Reading the user's own Zeugnisse** (during `/setup` Path A, from
-`documents/references/`): grade each one and use the result to calibrate, never to
-inflate. A Grade 6 Zeugnis is hard evidence for a CV claim. A Grade 3 is a reason to
-frame that role modestly rather than as a highlight.
-
-**Never** paraphrase a Zeugnis into a CV or cover letter claim that outruns its grade. A
-recruiter reading the dossier has the Zeugnis on page 4 and will see the contradiction —
-which is worse than a modest claim.
-
-**Flagging gaps.** If the user has no Zeugnis for a role on their CV, raise it before the
-dossier goes out. For a current employer, a Zwischenzeugnis is the fix. For a past
-employer, OR 330a entitles them to request one retroactively.
-
----
+- Keep CV claims consistent with what a reference would support. When a dossier includes the
+  Zeugnisse, the recruiter has both documents in the same PDF.
+- If a role on the CV has no reference and one may be asked for, a *Zwischenzeugnis* covers
+  a role still in progress, and OR 330a allows requesting one from a past employer
+  retroactively.
 
 ## 4. Pensum — workload percentage
 
@@ -245,13 +162,10 @@ Additions to the standard fit framework. These sit alongside the dimensions in
   stated level as real unless hedged.
 - **Canton** — commute measured in SBB travel time rather than kilometres, and the tax
   effect noted where an offer comparison spans cantons.
-- **Employer type** — Swiss-domestic or international, since it determines dossier
-  contents, photo, and application language. This is the first thing to establish about a
-  Swiss posting, because three other decisions follow from it.
+- **Employer type** — Swiss-domestic or international, since it sets the application
+  language and the register.
 - **13th month and Pensionskasse terms** flagged as questions for interview when the
   posting is silent, which it usually is.
-- **Zeugnis coverage** — whether the user actually holds references for the roles this
-  application leans on.
 
 > **Work authorisation.** The permit gate is **off** for this profile: the user is a Swiss
 > citizen or holds a C permit, so no posting is filtered or downscored on permit grounds.
