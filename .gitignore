@@ -112,3 +112,6 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Machine-local Claude Code permission grants (not shared)
+.claude/settings.local.json
