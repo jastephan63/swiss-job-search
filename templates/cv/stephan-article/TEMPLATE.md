@@ -4,7 +4,7 @@
 **Source extension:** `.tex`
 **Compile command:** `pdflatex -interaction=nonstopmode <file>.tex` (run **twice**)
 **Engine/toolchain:** pdflatex (TinyTeX, TeX Live 2022)
-**Page limit:** 1 page for consulting and developer roles; 2 pages for research and public-sector roles. Never a partial page.
+**Page limit:** 1 page. Jake's stated preference across tracks. Two pages only when a posting explicitly asks for more; never a partial page.
 
 ## Files
 

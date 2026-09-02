@@ -12,7 +12,7 @@ framework_version: 1.4.3
 > - **Source:** `templates/cv/stephan-article/template.tex` (English) or `template-de.tex` (German)
 > - **Compile:** `pdflatex -interaction=nonstopmode <file>.tex`, run **twice**
 > - **Engine:** pdflatex via TinyTeX. Add `$HOME/Library/TinyTeX/bin/universal-darwin` to PATH first — it is not on the default PATH.
-> - **Pages:** 1 for consulting and developer roles, 2 for research and public-sector roles. Never a partial page.
+> - **Pages:** exactly 1. Jake's stated preference. Two only if a posting demands it; never a partial page.
 > - **Fonts:** Latin Modern + microtype, T1. No fontspec, no lualatex/xelatex needed.
 > - **Style:** no em-dashes, no `ß`, single column, no graphics, no photo. Bold sparingly.
 > - **Track selector:** the coloured line under the name states the positioning and MUST be rewritten per application.

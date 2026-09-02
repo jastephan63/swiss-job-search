@@ -165,7 +165,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable.
 - [ ] Compiled with the active template's declared command (see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`)
-- [ ] **CV is 1 or 2 full pages** - never 1.2 or 2.3. Single page for consulting and developer roles, two for research and public-sector roles
+- [ ] **CV is exactly 1 page.** This is Jake's stated preference and matches the cynkra and Bain CVs he likes. Two pages only when the posting explicitly asks for more detail, and then a full two - never 1.2 or 2.3
 - [ ] **No orphaned entry titles** - a job or education title must never sit at the bottom of a page with its bullets on the next
 - [ ] **Cover letter is exactly 1 page** - signature block fits with the body
 - [ ] Fonts consistent throughout, including list items
