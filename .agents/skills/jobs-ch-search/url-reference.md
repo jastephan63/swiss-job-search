@@ -152,3 +152,19 @@ re-read its terms before changing the header, not a bug to patch around.
 Identical repeated requests return slightly different hit counts (110 vs 181 for the same
 query minutes apart). The site personalizes and A/B-tests its result mix. `meta.total` is
 approximate; do not build exact-count assertions on live data.
+
+## `term` does not phrase-match
+
+jobs.ch tokenises the query and matches terms independently. Searching
+`wissenschaftlicher Mitarbeiter` returns postings for canteen staff, secretaries and
+archivists, because they match the token `Mitarbeiter` alone. Quoting does not help.
+
+Consequence for `/scrape`: for any multi-word job title, **filter client-side on the returned
+`title`** rather than trusting the query to have done it. A sweep of 673 hits for
+`wissenschaftlicher Mitarbeiter` variants returned 218 unique postings, of which only 20 had
+a title that actually matched the intended sense. Reporting the raw count as "matches" would
+overstate coverage by an order of magnitude.
+
+The same applies to `Data Scientist` (matches "Scientist" alone: packaging, analytical
+chemistry) and `Associate Consultant` (matches "Associate": Physician Associate, Research
+Associate in wet-lab pharma).
