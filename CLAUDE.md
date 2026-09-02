@@ -110,9 +110,9 @@ All four are active targets. Each application must commit to **one** track and b
 - Roles outside SBB commuting range from Zürich, unless substantially remote
 - Pure account management, sales, or business development with no analytical core
 
-### Open Questions To Resolve
-- Sotomo end date is stated as Dec 2025 on most CVs and Jan 2026 on the cynkra CV. **Dec 2025 is used here.** Confirm against the Arbeitszeugnis and use one date everywhere.
-- Sotomo is labelled `(Praktikum)` on the YouGov 2 CV only and as a full research associate role on all others. **Full role is used here.** Do not reintroduce the internship framing unless it is factually correct.
+### Settled Facts
+- **Sotomo ran May 2025 to December 2025.** Confirmed by Jake on 2026-09-02. The `Jan 2026` on the archived cynkra CV and the `November 2025` on the 2025 master CV are both wrong. Use **Dez. 2025 / Dec. 2025** everywhere, without exception.
+- Sotomo was a **full research associate role**, not an internship. It is labelled `(Praktikum)` on the archived YouGov 2 CV only. Do not reintroduce that framing.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants

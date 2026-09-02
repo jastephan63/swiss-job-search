@@ -96,15 +96,13 @@ costs. Code at github.com/jastephan63/str-regulation-housing.
 *Use for:* housing and real-estate policy roles (IAZI, Wüest und Partner), causal-inference
 claims, and the tourism/short-term-rental thread.
 
-## Known inconsistencies to resolve
+## Settled, and one thing still worth watching
 
-Carried forward from the prior applications - fix once, then apply everywhere:
-
-- **Sotomo end date.** Dec 2025 on most CVs, Jan 2026 on the cynkra CV, Nov 2025 on the
-  2025 master. `CLAUDE.md` uses **Dec 2025**. Confirm against the Arbeitszeugnis.
-- **Sotomo seniority.** Labelled `(Praktikum)` on the YouGov 2 CV only, a full research
-  associate role on all others. `CLAUDE.md` uses the **full role**. Do not reintroduce the
-  internship framing unless it is factually correct.
+- **Sotomo: May 2025 to December 2025.** Confirmed by Jake, 2026-09-02. The archived cynkra
+  CV says Jan 2026 and the 2025 master CV says November 2025; both are wrong. Never copy a
+  date from those files.
+- **Sotomo was a full research associate role**, not an internship. The `(Praktikum)` label
+  appears on the archived YouGov 2 CV only.
 - **A placeholder once reached a compiled PDF.** `cynkra/Stephan_CV.pdf` shipped with
   `[ADD: one Shiny application, what it did and who used it.]` visible in the Sotomo
   bullets. The Verification Checklist in `CLAUDE.md` now checks for this explicitly.
