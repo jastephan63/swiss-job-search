@@ -111,8 +111,10 @@ All four are active targets. Each application must commit to **one** track and b
 - Pure account management, sales, or business development with no analytical core
 
 ### Settled Facts
-- **Sotomo ran May 2025 to December 2025.** Confirmed by Jake on 2026-09-02. The `Jan 2026` on the archived cynkra CV and the `November 2025` on the 2025 master CV are both wrong. Use **Dez. 2025 / Dec. 2025** everywhere, without exception.
-- Sotomo was a **full research associate role**, not an internship. It is labelled `(Praktikum)` on the archived YouGov 2 CV only. Do not reintroduce that framing.
+- **Sotomo ran May 2025 to December 2025, as a 90% Praktikum.** Both confirmed against the Arbeitszeugnis (signed Dr. Michael Hermann, Geschäftsführer, 23.12.2025). The `Jan 2026` on the archived cynkra CV and `November 2025` on the 2025 master are wrong.
+- **The title is `Wissenschaftlicher Mitarbeiter (Praktikum), 90%` / `Research Associate (internship), 90%`.** Jake's decision, 2026-09-02: name the function and the format. Do **not** write plain "Wissenschaftlicher Mitarbeiter" - the Zeugnis says Praktikum, and in this market the Zeugnis is read alongside the CV. An earlier version of this file asserted the opposite; it was wrong.
+- The Zeugnis substance supports the CV bullets: "viele entscheidende Beiträge", "überdurchschnittliche Kompetenz" in LimeSurvey and R, independent lead on smaller projects including the City of Zürich digital-services evaluation.
+- **Stand by You / «Junge Angehörige»** (Sotomo, fielded 5-23 Sept 2025, n=1,944, representative for German- and French-speaking Switzerland): a study of children and adolescents growing up with mentally ill family members. Jake **contributed**; the public project page credits Lisa Frisch as lead, so never claim ownership. This is his Kinder- und Jugendhilfe evidence.
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants

@@ -101,8 +101,17 @@ claims, and the tourism/short-term-rental thread.
 - **Sotomo: May 2025 to December 2025.** Confirmed by Jake, 2026-09-02. The archived cynkra
   CV says Jan 2026 and the 2025 master CV says November 2025; both are wrong. Never copy a
   date from those files.
-- **Sotomo was a full research associate role**, not an internship. The `(Praktikum)` label
-  appears on the archived YouGov 2 CV only.
+- **Sotomo was a 90% Praktikum**, per the Arbeitszeugnis. Written as
+  `Wissenschaftlicher Mitarbeiter (Praktikum), 90%`. The archived YouGov 2 CV had this
+  right; the others overstate it.
+
+**Stand by You, «Junge Angehörige»** (Sotomo, Sept 2025). Representative survey of 1,944
+respondents on children and adolescents growing up with mentally ill family members. A
+quarter of respondents had a mentally ill person in the family as a child; over half
+received no support they needed. Jake **contributed**, he did not lead - the project page
+credits Lisa Frisch.
+*Use for:* Kinder- und Jugendhilfe, social policy, health, and any role where a
+vulnerable-population evidence base matters.
 - **A placeholder once reached a compiled PDF.** `cynkra/Stephan_CV.pdf` shipped with
   `[ADD: one Shiny application, what it did and who used it.]` visible in the Sotomo
   bullets. The Verification Checklist in `CLAUDE.md` now checks for this explicitly.
