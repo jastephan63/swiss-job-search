@@ -165,7 +165,11 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable.
 - [ ] Compiled with the active template's declared command (see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`)
-- [ ] **CV is exactly 1 page.** This is Jake's stated preference and matches the cynkra and Bain CVs he likes. Two pages only when the posting explicitly asks for more detail, and then a full two - never 1.2 or 2.3
+- [ ] **CV is exactly 2 full pages.** Two pages is the Swiss norm for cantonal, federal, research and SME employers. Use 1 page only for management consulting (Bain, McKinsey, BCG), which expects it. Never a partial page - a second page holding three lines looks worse than a tight one
+- [ ] **Nothing renders below the page boundary.** Check the lowest text baseline, not just the page count. `\enlargethispage` pushes content past the bottom edge while the page count still reads correct and the text still extracts - the content simply is not on the paper. Verify with:
+      `python3 -c "from pypdf import PdfReader; r=PdfReader('<pdf>'); ys=[]; r.pages[-1].extract_text(visitor_text=lambda t,cm,tm,fd,fs: ys.append(tm[5]) if t.strip() else None); print(min(ys))"`
+      Below ~30 is at or over the edge and will be clipped when printed. **This shipped once: six of eight CVs rendered their final section off the page while the checklist reported "1p OK".** Never use `\enlargethispage` to force a fit - cut content or add a page
+- [ ] **Second page is at least half full.** Measure the same way: `(790 - lowest_y) / 750`
 - [ ] **No orphaned entry titles** - a job or education title must never sit at the bottom of a page with its bullets on the next
 - [ ] **Cover letter is exactly 1 page** - signature block fits with the body
 - [ ] Fonts consistent throughout, including list items

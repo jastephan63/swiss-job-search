@@ -4,7 +4,7 @@
 **Source extension:** `.tex`
 **Compile command:** `pdflatex -interaction=nonstopmode <file>.tex` (run **twice**)
 **Engine/toolchain:** pdflatex (TinyTeX, TeX Live 2022)
-**Page limit:** 1 page. Jake's stated preference across tracks. Two pages only when a posting explicitly asks for more; never a partial page.
+**Page limit:** 2 full pages for Swiss employers (cantonal, federal, research, SME). 1 page for management consulting only. Never a partial page.
 
 ## Files
 
@@ -76,3 +76,20 @@ with email and phone as literal text and no `(cid:` artifacts. Verified 2026-09-
    The CV escapes this only because its `\\` already carries an explicit `[0.5em]`.
 
 Both produce broken output that a `.tex` read cannot catch. Compile and count pages.
+
+
+## Never use `\enlargethispage` to force a page fit
+
+It extends the text block past the bottom margin. Content then renders **below the page
+boundary**: still in the text layer, still counted as one page, but not on the paper. Six
+CVs shipped this way before it was caught by looking at a printout.
+
+Check the lowest baseline on the last page, not the page count:
+
+```
+python3 -c "from pypdf import PdfReader; r=PdfReader('f.pdf'); ys=[]; \
+r.pages[-1].extract_text(visitor_text=lambda t,cm,tm,fd,fs: ys.append(tm[5]) if t.strip() else None); print(min(ys))"
+```
+
+Below ~30pt is at or over the edge. If a document overflows, cut content or let it run to a
+full second page.
