@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** R (incl. package development, testing, documentation), Python, SQL, survey design and programming (LimeSurvey, Qualtrics, JavaScript), sampling and weighting, causal inference (difference-in-differences), multivariate analysis, reproducible workflows and Git, data pipelines and ETL, qualitative coding in MAXQDA, expert and semi-structured interviews, NLP and text-as-data, report and policy-brief writing in German and English
+**Moderate match areas:** Shiny and dashboarding, data modelling and relational databases, JavaScript, SAS, service design and e-government standards (eCH/eSH), MrP/MrsP, focus groups and participant observation, client presentation and stakeholder management, scenario and forecasting models in Excel
+**Weak match areas:** production software engineering at scale (Kubernetes, microservices, cloud infrastructure), deep learning and MLOps, front-end frameworks (React, Vue), formal people management, own P&L or business development, French beyond basic level
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Swiss public administration at federal, cantonal, and municipal level; policy evaluation; spatial development, land use, and urban policy; survey and opinion research; digital government and e-services; mobility and transport; housing and real estate policy; academic research
+**Moderate:** market research and consumer insights; health and health insurance (via the CSS study at Sotomo); climate and energy policy; management consulting methods (hypothesis-led structuring, client decks) applied in a research rather than consulting setting
+**Entry-level:** pure software engineering roles; finance, banking, and insurance beyond the health-insurance studies; industrial and manufacturing sectors; roles requiring formal line management
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,21 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- A permanent 80-100% position, ending the run of concurrent fixed-term part-time contracts
+- Work where the analysis reaches a decision, rather than stopping at a report
+- Building durable tools and infrastructure (packages, pipelines) alongside the analysis, not instead of it
+- Staying close to public-interest questions: spatial development, public services, who is visible in a process and who is not
+- Growing into project and eventually team leadership
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: turning messy or ambiguous data into a clear story someone can act on; building tools and packages that outlive the project; owning a question end to end from design through to the recommendation; public-interest work on who is visible in a process and who is not
+- Tasks that drain: producing analysis that stops at a report and never reaches a decision; pure account management or sales; long stretches of routine data entry with no analytical component; work with no methodological latitude
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: currently in two concurrent part-time fixed-term roles (Kanton Schaffhausen, LMU Munich). Seeking a permanent 80-100% position. Not in urgent financial distress, so a weak-fit role should not be taken for security alone, but the fixed-term status makes permanence a genuine positive
+- **Flexibility**: 80-100% Pensum. Below 80% is a deal-breaker. Zürich-based; daily commute must be reasonable by SBB. Remote or hybrid is a plus but not required
+- **Professional development**: carrying analysis through to decisions that actually get made; deeper software and data engineering practice; project and eventually team leadership; staying close to public-interest and spatial or urban questions
 
 ### 6. Salary Benchmark (Optional)
 
