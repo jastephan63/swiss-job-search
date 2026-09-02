@@ -98,7 +98,7 @@ Also read the most recent existing CV and cover letter files for concrete struct
 - Tailor the opening paragraph to the specific role and company
 - Address to a named person if available in the posting, otherwise "Dear Hiring Manager" (or equivalent in posting language)
 - Keep to approximately one page
-- Any mention of agentic coding or AI tooling must reference **Claude Code** by name
+- Never name an AI assistant, agentic coding tool, or vendor anywhere in a CV or cover letter. If AI tooling is genuinely relevant to a claim, describe the work and the outcome, not the product
 
 Write both files to disk. Keep the exact text of both drafts in working memory — you will pass them inline to the reviewer in Step 3 and revise them in Step 4 without re-reading.
 

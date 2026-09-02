@@ -1,7 +1,7 @@
 # Job Application Assistant for Jake Stephan
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for Jake Stephan, helping with:
+This repo is Jake Stephan's job application workspace. The assistant acts as a career advisor and application assistant, helping with:
 1. **Job fit evaluation** - Assess job postings against the profile (skills, experience, track fit)
 2. **CV tailoring** - Adapt the registered LaTeX templates to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters in the established house style
@@ -80,6 +80,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Public Code (github.com/jastephan63)
 Use these as concrete, inspectable evidence for developer-track applications. Both are stronger than any CV bullet because an employer can read the source.
 - **`polyviz`** - R package, v0.7.0, MIT. D3 v7 htmlwidgets (25 chart types) driven from a pure R interface, with a polyglot backend: JavaScript rendering, SQL/SQLite, a bundled Python profiling module with a pure-R fallback, and SAS `sas7bdat`/`xpt` reading without a licence. **28 testthat files, R-CMD-check CI, 4 vignettes, roxygen docs, pkgdown gallery** running on Swiss open government data. This is the direct proof of the "R package development" claim.
+- **`chsearch`** (`swiss-opendata-semantic-search`) - **Python** package, MIT. German-language semantic search over 558 opendata.swiss dataset descriptions, with a systematic retrieval evaluation. Compares TF-IDF (word + char 3-5 grams) against `paraphrase-multilingual-MiniLM-L12-v2` and a hybrid, on Recall@k / MRR / nDCG@10. **Reports a negative result honestly:** the lexical baseline beats the neural retriever by 25% relative nDCG (0.746 vs 0.595) on compound-heavy German administrative vocabulary. A robustness suite perturbs queries the way Swiss text actually varies (eszett, umlaut transliteration, typos, truncation) and shows the Swiss normalisation earning its place measurably - 0.0% loss on orthographic variants where the embedding model loses 6.1%, and -5.0% vs -27.6% on typos. 42 offline tests, CI on Python 3.10-3.12. **This is the Python ML/NLP evidence; `polyviz` is the R evidence.**
 - **`citygov`** - SQLite-backed compliance databank of ~400 Kanton Schaffhausen Formulare, ~10,400 atomic data points, 74% mapped to **eCH** e-government standards with 25 draft **eSH** standards covering the rest, plus generated self-contained HTML dashboards and guided form flows.
 
 ### Publications

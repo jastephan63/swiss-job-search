@@ -72,6 +72,16 @@ pkgdown gallery on Swiss open government data.
 *Use for:* every developer-track application. This is the inspectable proof of the R
 package development claim, and it currently appears on none of the CVs.
 
+**`chsearch`** (github.com/jastephan63/swiss-opendata-semantic-search). Python package,
+MIT. German semantic search over Swiss open government metadata with a full retrieval
+evaluation: TF-IDF vs multilingual sentence embeddings vs hybrid, scored on Recall@k, MRR
+and nDCG@10 over 558 opendata.swiss descriptions. Lexical beats neural by 25% relative
+nDCG, reported as the headline finding rather than buried. A seeded robustness suite
+measures degradation under eszett, umlaut-transliteration, typo and truncation
+perturbations. 42 offline tests, CI on 3.10-3.12.
+*Use for:* any posting asking for Python ML/NLP code samples, model evaluation, or
+evidence of judgement about when not to use a neural model. Built 2026-09-02.
+
 **`citygov`** (github.com/jastephan63/citygov). SQLite compliance databank of ~400 Kanton
 Schaffhausen Formulare, ~10,400 atomic data points, 74% mapped to eCH e-government
 standards with 25 draft eSH standards covering the rest.
