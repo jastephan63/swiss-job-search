@@ -57,6 +57,43 @@ The tool expects `salary_data.json` with this structure:
 - **companies[].city**: City/location (optional, used for filtering)
 - **companies[].categories**: Named salary categories, each with `count` and/or `index`
 
+## Swiss wage data sources
+
+Switzerland has unusually good public wage statistics, which matters here because Swiss
+employers almost never publish a range in the posting itself — `jobs-ch-search` reports
+`salary: null` for nearly every result because the field is genuinely empty. You will be
+asked `Was sind Ihre Lohnvorstellungen?` and you should have a benchmarked number ready.
+
+Free and authoritative:
+
+- **Salarium** (Federal Statistical Office, BFS/OFS) — the official wage calculator, built
+  on the biennial Swiss Earnings Structure Survey. Returns a median and quartiles for a
+  given occupation, sector, region, age, education, and workload. This is the strongest
+  single source and the right anchor for a target figure.
+  <https://www.bfs.admin.ch/bfs/en/home/statistics/work-income/wages-income-employment-labour-costs.html>
+- **Lohnrechner (Travail.Suisse / Unia / Syna)** — union calculators. Useful cross-checks,
+  and authoritative for sectors under a collective agreement (GAV), where the GAV minimum
+  is a hard floor rather than a guideline.
+- **Lohnbuch Schweiz** (Amt für Wirtschaft und Arbeit, Kanton Zürich) — annual reference of
+  actual wages by occupation. Paid, but the standard printed reference.
+
+Useful with a caveat: **jobs.ch salary check**, **gehalt.ch**, **Glassdoor CH**, and
+**lohnanalyse.ch** are self-reported and skew high. Treat them as a sanity check on a
+Salarium figure, never as the primary source.
+
+Two things to normalise before comparing anything:
+
+1. **12 or 13 months.** Swiss figures may or may not include the 13th month salary. The
+   same "CHF 130,000" differs by a full month's pay depending on which basis it uses.
+   Record the basis in `metadata.baseline_description` and keep every entry consistent.
+2. **Gross, and which canton.** Cantonal income tax varies enough that a larger gross can
+   be a smaller net. Benchmark gross, and treat the canton as a separate factor rather
+   than folding it into the number.
+
+For this market, `index_label` is usually better set to `CHF` with absolute annual gross
+values than to an index — the public data is absolute, so converting it to an index throws
+away information you would have to convert back.
+
 ## Setup options
 
 ### Option A: Create salary_data.json manually

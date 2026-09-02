@@ -2,62 +2,68 @@
   <img src="assets/mascot/pip_flight_loop.gif" alt="Pip, the courier bird" width="200">
 </p>
 
-# AI Job Search
+# Swiss Job Search
 
-*The job search that runs on your machine.*
+*An AI job-application workflow for the Swiss market, running on your machine.*
 
-<p align="center">
-  <a href="https://trendshift.io/repositories/43622?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-43622" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/43622/daily" alt="MadsLorentzen%2Fai-job-search | Trendshift" width="250" height="55"/></a>
-</p>
+A private adaptation of [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search)
+(MIT) for **Switzerland**. Upstream's core workflow — self-profiling, fit evaluation, and the
+drafter-reviewer application pipeline — is country-agnostic and is used here unchanged. What is
+different is the market layer.
 
-[![CI](https://github.com/MadsLorentzen/ai-job-search/actions/workflows/ci.yml/badge.svg)](https://github.com/MadsLorentzen/ai-job-search/actions/workflows/ci.yml)
-
-An AI-powered job application framework built on [Claude Code](https://claude.com/claude-code). Fork it, fill in your profile, and let Claude evaluate job postings, tailor your CV, write cover letters, and prepare you for interviews.
-
-> Note: This is an independent open-source project and is not affiliated with, endorsed by, sponsored by, or maintained by Anthropic. Anthropic and Claude Code are referenced only to describe the toolchain this workflow uses.
+> This repository is **private** on purpose. `/setup` writes your name, contact details,
+> employment history, and salary expectations into **tracked** files. Do not make it public.
 >
-> This project has **no affiliated cryptocurrency, token, or paid sponsorship program**. Anything claiming otherwise is unauthorized and should be treated as a scam. The only ways to support the project are the Ko-fi link below and contributing on GitHub.
+> `upstream` is configured **fetch-only** (its push URL is disabled), so upstream updates can be
+> pulled in but nothing can be pushed back to the original author's repository.
 
-## Does it actually work?
+## What is Swiss about it
 
-I'm a geophysicist by training. When my position was cut in late 2025, I built this framework to run my own job search - the same `/scrape`, `/apply`, and `/interview` workflow in this repo, used weekly, on my own career. I was upfront about it with every employer I spoke to, and instead of counting against me, it usually sparked a genuine technical conversation.
+**A portal skill for the real Swiss boards.** `jobs-ch-search` covers **jobs.ch** (the largest
+Swiss platform) and **jobup.ch** (its Romandie sibling, same platform) behind one `--site` flag.
+Both server-render a schema.org JSON-LD payload, so the CLI parses structured data rather than
+scraping markup — the sites can restyle their cards without breaking it. It supports:
 
-Sixty-nine tailored applications, twenty first interviews, and one signed contract later, I started as an AI engineer in June 2026. People kept asking whether this actually works. It got me hired. Now it's yours.
+- `--locale de|fr|en`, which switches the site's search **path**, not just its interface language
+- `--workload-min` / `--workload-max` for the Swiss **Pensum** percentage
+- `--jobage 1|7|14|31`, validated — jobs.ch silently ignores any other value and returns
+  *unfiltered* results that look like a working recency filter
 
-*The longer version, including the full application funnel, is on [LinkedIn](https://www.linkedin.com/in/mads-lorentzen/).*
+The four Danish demo portals from upstream ship disabled. `linkedin-search` and
+`freehire-search` stay enabled and work here unchanged.
 
-<p align="center">
-  <i>Did this save you a Sunday of cover-letter writing? Consider a coffee.<br>
-  Did it land you the job? Maybe two.</i> ☕
-</p>
+**A Swiss market reference** at
+[`10-swiss-market.md`](.claude/skills/job-application-assistant/10-swiss-market.md), wired into
+the `/apply` workflow. It covers the things that have no Danish or Anglo-American equivalent:
 
-<p align="center">
-  <a href="https://ko-fi.com/madslorentzen">
-    <img src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" alt="Buy me a coffee at ko-fi.com" height="40">
-  </a>
-</p>
+- **The Bewerbungsdossier** — cover letter, CV, *Arbeitszeugnisse*, diplomas, as one PDF. Omitting
+  the references is the most common way a Swiss-domestic application reads as incomplete.
+- **Arbeitszeugnis grading** — the coded reference language, on the Swiss 1–6 scale where **6 is
+  best** (the inverse of the German scale). `stets zur vollsten Zufriedenheit` is a 6;
+  `hat sich bemüht` is a 1. Used to keep CV claims from outrunning the evidence backing them.
+- **CV photo** — expected by Swiss-domestic employers, wrong for Anglo-American processes.
+- **Swiss High German** — `ß` does not exist here, ever. `Strasse`, `Freundliche Grüsse`.
+- **Pensum, 13th month, Pensionskasse, cantonal tax, and OR Art. 335b/335c notice periods.**
 
-## What this is
+**Bilingual search.** German and English queries return substantially different result sets on
+jobs.ch and neither is a superset of the other, so `/scrape` runs both.
 
-A structured workflow that turns Claude Code into a full-stack job application assistant. The core workflow (self-profiling, fit evaluation, and the drafter-reviewer application pipeline) is **language- and country-agnostic**. The job portal search skills are built for the Danish market (Jobindex, Jobnet, Akademikernes Jobbank, etc.), but the pattern is designed to be swapped for your local job boards.
+**Swiss wage data.** `salary_lookup.py` is pointed at Salarium (Federal Statistical Office),
+union calculators, and Lohnbuch Schweiz — see [`tools/README_SALARY_TOOL.md`](tools/README_SALARY_TOOL.md).
+Swiss postings almost never publish a range, so benchmarking is done from public statistics.
 
-```
-/setup          /scrape              /apply <url>
-  |                |                     |
-  v                v                     v
-Fill in        Search job           Evaluate fit
-your profile   portals              Score & recommend
-  |                |                     |
-  v                v                     v
-Profile        Present matches      Draft CV + Cover Letter
-files ready    with fit ratings     (LaTeX, tailored)
-                   |                     |
-                   v                     v
-               Pick a match         Reviewer agent critiques
-               -> /apply            -> Revise -> Final output
-```
+**Work authorisation:** the permit gate is **off** — this profile is a Swiss citizen / C permit
+holder, so nothing is filtered or downscored on permit grounds.
 
-The framework encodes career guidance best practices, including structured evaluation criteria, forward-looking cover letter framing, and optional salary benchmarking.
+### Portals evaluated and rejected
+
+| Portal | Why not |
+|---|---|
+| `arbeit.swiss` / `job-room.ch` | Federal API requires auth (401); `robots.txt` disallows `/job-search/` |
+| `swissdevjobs.ch` | Public API returns "ENDPOINT Deprecated" |
+| `myscience.ch` | `robots.txt` disallows `/search` |
+
+`jobscout24.ch` and `ostjob.ch` are permitted by robots and remain candidates for `/add-portal`.
 
 ## Prerequisites
 
@@ -92,7 +98,7 @@ cd ai-job-search
 PowerShell:
 
 ```powershell
-$tools = @("jobbank-search", "jobdanmark-search", "jobindex-search", "jobnet-search", "linkedin-search", "freehire-search")
+$tools = @("jobs-ch-search", "linkedin-search", "freehire-search")
 foreach ($tool in $tools) {
   Push-Location ".agents/skills/$tool/cli"
   bun install
@@ -103,7 +109,7 @@ foreach ($tool in $tools) {
 Bash / zsh / Git Bash:
 
 ```bash
-for tool in jobbank-search jobdanmark-search jobindex-search jobnet-search linkedin-search freehire-search; do
+for tool in jobs-ch-search linkedin-search freehire-search; do
   (cd .agents/skills/$tool/cli && bun install)
 done
 ```
@@ -131,7 +137,7 @@ This searches multiple job portals for positions matching your profile, deduplic
 ### 5. Apply to a job
 
 ```bash
-/apply https://jobindex.dk/job/1234567
+/apply https://www.jobs.ch/en/vacancies/detail/4fb22d9e-9326-4f87-b5f9-4289c8b414a6/
 ```
 
 If the URL can't be fetched (some job portals block automated access), you can paste the job description directly instead:
@@ -194,10 +200,11 @@ ai-job-search/
 │   │   └── upskill/                   # /upskill skill gap analysis and learning plan
 │   └── settings.json                  # Claude Code permissions (shared, scoped)
 ├── .agents/skills/                    # Job portal CLI tools
-│   ├── jobbank-search/                # Akademikernes Jobbank (Denmark)
-│   ├── jobdanmark-search/             # Jobdanmark.dk (Denmark)
-│   ├── jobindex-search/               # Jobindex.dk (Denmark)
-│   ├── jobnet-search/                 # Jobnet.dk (Denmark, government portal)
+│   ├── jobs-ch-search/                # jobs.ch + jobup.ch (Switzerland) - the active portal
+│   ├── jobbank-search/                # Akademikernes Jobbank (Denmark, disabled)
+│   ├── jobdanmark-search/             # Jobdanmark.dk (Denmark, disabled)
+│   ├── jobindex-search/               # Jobindex.dk (Denmark, disabled)
+│   ├── jobnet-search/                 # Jobnet.dk (Denmark, disabled)
 │   ├── linkedin-search/               # LinkedIn public job listings (country-agnostic)
 │   └── freehire-search/               # freehire.me tech job aggregator (multi-market, REST API)
 ├── cv/

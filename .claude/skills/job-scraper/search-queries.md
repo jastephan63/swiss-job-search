@@ -10,16 +10,57 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 **Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
 
-## Search Sites
+## Market: Switzerland
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+This fork targets **German-speaking Switzerland plus English-language roles nationally**.
+Market conventions live in `job-application-assistant/10-swiss-market.md`; this file covers
+only how to *find* the postings.
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+### Search Sites
+
+Primary (have a CLI - `/scrape` runs these automatically, no `site:` line needed):
+- **jobs.ch** - the largest Swiss job platform. `jobs-ch-search` CLI
+- **jobup.ch** - Romandie sibling of jobs.ch, same platform. `jobs-ch-search --site jobup.ch`
+- **linkedin.com/jobs** - `linkedin-search` CLI, pass `-l "Zurich, Switzerland"` etc.
+- **freehire.me** - multi-market tech aggregator. `freehire-search` CLI
+
+Secondary (WebSearch fallback - no CLI, use the `site:` templates below):
+- **jobscout24.ch** - large general board
+- **ostjob.ch** - Eastern Switzerland (St. Gallen, Thurgau, Appenzell)
+- **jobagent.ch** - aggregator
+- **myscience.ch** - academic and research posts (ETH, EPFL, PSI, Empa, universities)
+- **swissdevjobs.ch** - Swiss software roles
+- Company career pages via `site:` searches for known target employers
+
+> **Not usable, do not add:** `arbeit.swiss` / `job-room.ch` (the federal RAV portal). Its
+> API requires authentication and its `robots.txt` disallows `/job-search/`. Verified
+> 2026-09-02.
+
+### Searching a bilingual market
+
+The single highest-leverage habit in Switzerland: **run every priority category twice, in
+German and in English.** The two return substantially different result sets and neither is
+a superset of the other. Many Swiss SME postings exist only in German; many pharma, banking,
+and big-tech postings only in English.
+
+With the CLI this is the `--locale` flag, which switches the site's *search path* and not
+just its interface language:
+
+```bash
+# same role, two languages, materially different results
+bun run .agents/skills/jobs-ch-search/cli/src/cli.ts search -q "[YOUR_PRIMARY_JOB_TITLE_1]" -l "[YOUR_CITY]" --locale en --jobage 14
+bun run .agents/skills/jobs-ch-search/cli/src/cli.ts search -q "[YOUR_PRIMARY_JOB_TITLE_1_DE]" -l "[YOUR_CITY]" --locale de --jobage 14
+```
+
+Translate titles into the German term Swiss employers actually post under, rather than
+word-for-word: `Softwareentwickler` / `Applikationsentwickler`, `Sachbearbeiter`,
+`Projektleiter`, `Fachspezialist`, `Wissenschaftlicher Mitarbeiter`, `Teamleiter`.
+
+### Pensum filter
+
+Swiss postings advertise a workload percentage, and part-time is common at every
+seniority. Set it explicitly rather than letting 40–60% listings fill the results:
+`--workload-min [YOUR_MIN_PENSUM]` (use `80` for effectively-full-time, `100` for strict).
 
 ## Query Categories
 
@@ -69,12 +110,22 @@ site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
+When evaluating results, verify the job location is within reasonable commute distance from your home.
+
+**Measure Swiss commutes in SBB travel time, not kilometres.** The rail network makes
+distance a poor proxy: Zürich–Bern is ~125 km but under an hour by direct IC, while a
+30 km valley trip can take longer. Check the connection, not the map.
+
+Define acceptable areas:
 - [YOUR_CITY] and surrounding areas
 - [ACCEPTABLE_AREA_1]
 - [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
+- [BORDERLINE_AREA] (borderline - ~X min by SBB)
 - [TOO_FAR_AREA] (too far)
+
+**Canton matters beyond the commute.** Income tax varies materially between cantons, so a
+larger gross in one canton can be a smaller net in another. Note the canton on results, and
+flag the effect when comparing offers across cantons - see `10-swiss-market.md` §5.
 
 ## Language Filter
 
