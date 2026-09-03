@@ -139,6 +139,24 @@ These are Jake's own rules, applied without exception across 50 prior applicatio
 - Cover letters open with one concrete story, not a thesis statement. Close with language, availability, and Pensum.
 - `Freundliche Grüsse` in German; `Kind regards` in English.
 
+## Pitch the Cover Letter at Its Actual Reader
+Establish who opens the letter before drafting, and write for them. Getting this wrong is the
+most common way a good letter fails.
+
+- **Recruiter or HR screener** (agency mandates, large-company talent teams, generic
+  `Bewerbungen@` inboxes): they are matching against a client brief, not evaluating method.
+  Use the posting's own words so requirements are visibly ticked. **No metric names**
+  (Recall@k, MRR, nDCG), no method acronyms (MrP, MrsP, DiD), no tool jargon without a plain
+  gloss. Say what the work achieved and at what scale. Name the concrete tools the posting
+  itself names, since those are the checklist.
+- **A named specialist** (a research lead, a statistics office, a search team): technical
+  specificity is the point, and plain language reads as thin. Use the real terms.
+- **Mixed or unknown**: write plainly, and let the CV carry the technical density. A
+  specialist is never put off by a clear letter; a screener is put off by an opaque one.
+
+Applied so far: Humanis (recruiter, plain), Basel-Stadt and HSG (HR, plain), Kanton Zürich
+and Büro BASS and Galaxus (named specialists, technical), Sonova (mixed, moderate).
+
 ## Verification Checklist
 After creating or updating a CV or cover letter, re-read the generated file and verify **all** of the following before presenting. Report as a pass/fail checklist.
 
